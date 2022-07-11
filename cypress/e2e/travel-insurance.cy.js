@@ -24,7 +24,7 @@ describe('travel insurance test set', () => {
     it('add No Insurance for primary passenger', () => {
         setPassengerNoInsurance(0)
     })
-    it('set Travel Plus to primary ', () => {
+    it('set Travel Plus to primary passenger and Travel Basic to secondary passenger via Comparison and Terms', () => {
         setPassengerInsuranceViaCaT(0, INSURANCE_TYPE_SELECTOR_KEY.TravelPlus)
         addPassengers(1)
         setPassengerInsuranceViaCaT(1, INSURANCE_TYPE_SELECTOR_KEY.TravelBasic)
